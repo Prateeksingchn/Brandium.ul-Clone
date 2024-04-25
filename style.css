@@ -256,7 +256,7 @@ overflow: hidden;
 #moving-image{
     height: 26vw;
     width: 20vw;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     opacity: 0;
     z-index: 8;
@@ -368,7 +368,9 @@ overflow: hidden;
 
   #page6 .p6-card .p6-left h2 {
     font-size: 3.5vw;
+    line-height: 1.2;
     font-weight: 500;
+    margin-right: 30px;
     color: #000000;
     font-family: roboto;
   }
@@ -524,3 +526,414 @@ overflow: hidden;
     text-align: center;
     text-decoration: underline;
 }
+
+/* Media Queries */
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+    /* General styles */
+    #cursor {
+      display: none; /* Hide the cursor on small screens */
+    }
+  
+    nav {
+      flex-direction: row;
+      align-items: start;
+      padding: 1rem;
+    }
+  
+    nav svg {
+      height: 10vw; /* Adjust logo size for smaller screens */
+    }
+  
+    .nav-part2 {
+      width: auto;
+      padding-right: 0;
+      margin-top: 1rem;
+    }
+  
+    .nav-part2 h4 {
+      font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+  
+    /* Page 1 */
+    #page1 {
+      padding: 4rem 1rem;
+      background-position: center;
+    }
+  
+    #page1 h1 {
+      font-size: 4rem; /* Adjust font size for smaller screens */
+      line-height: 1.2;
+      letter-spacing: normal;
+    }
+  
+    /* Page 2 */
+    #page2 {
+      padding: 2rem 1rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+  
+    #page2 p {
+      font-size: 10.5vw; /* Adjust font size for smaller screens */
+      line-height: 1.4;
+      width: 100%;
+    }
+  
+    /* Page 3 */
+    #page3 {
+        padding-top: 90px;
+    }
+    #container {
+      padding: 2rem 1rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    #page3 h1 {
+      font-size: 10vw; /* Adjust font size for smaller screens */
+      line-height: 1.2;
+    }
+  
+    .card {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card h2 {
+      font-size: 5vw; /* Adjust font size for smaller screens */
+      margin-top: 1rem;
+    }
+  
+    .card p {
+      font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+  
+    /* Page 4 */
+    #page4 {
+      padding: 2rem 1rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+  
+    #page4 > h1 {
+      font-size: 10vw; /* Adjust font size for smaller screens */
+      line-height: 1.2;
+    }
+  
+    .element h2 {
+      font-size: 6vw; /* Adjust font size for smaller screens */
+      padding-left: 0.5rem;
+    }
+  
+    /* Page 5 */
+    #page5 {
+      margin-top: 2rem;
+    }
+  
+    #page5 h1 {
+      font-size: 13vw; /* Adjust font size for smaller screens */
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 2px;
+    }
+  
+    #page5 .p5-img .sec-1 {
+      padding: 1rem;
+    }
+  
+    #page5 .p5-img .sec-1 img {
+      width: 80px;
+    }
+  
+    /* Page 6 */
+    #page6 {
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  
+    #page6 h1 {
+      font-size: 12vw; /* Adjust font size for smaller screens */
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+    }
+  
+    .p6-empty {
+      width: 100%;
+    }
+  
+    #page6 .p6-card {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 1rem;
+      
+    }
+  
+    #page6 .p6-card .p6-left {
+      width: 100%;
+      align-items: self-start;
+      gap: 10px;
+    }
+  
+    #page6 .p6-card .p6-left h2 {
+      font-size: 4.7vw; /* Adjust font size for smaller screens */
+      font-weight: 500;
+      text-align: center;
+    }
+  
+    #page6 .p6-card .p6-left .p6-l-top,
+    #page6 .p6-card .p6-left .p6-l-bottom {
+        text-align: center;
+      gap: 1rem;
+    }
+  
+    #page6 .p6-card .p6-right {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    #page6 .p6-card .p6-right p {
+      width: 100%;
+      font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+  
+    /* Marquee */
+    .cont2 {
+      height: auto;
+      padding: 1rem 0;
+    }
+  
+    .cont2 h1 {
+      font-size: 8vw; /* Adjust font size for smaller screens */
+      margin: 0 1rem;
+      line-height: 1.2;
+    }
+  
+    .cont2 h1 span i {
+      font-size: 12vw; /* Adjust font size for smaller screens */
+      margin-left: 1rem;
+    }
+  
+    /* Page 7 */
+    #page7 {
+      height: auto;
+    }
+  
+    #page7 .page7-t {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    #page7 .p7-left {
+      width: 100%;
+      padding: 2rem 4rem;
+      flex-direction: row;
+      align-items: self-start;
+      gap: 4rem;
+    }
+  
+    #page7 .p7-left .p7-ul {
+      gap: 1rem;
+    }
+    #page7 .p7-left .p7-ul h1 {
+      text-wrap: nowrap;
+    }
+  
+    #page7 .p7-right {
+      width: 100%;
+      padding: 2rem 1rem;
+      align-items: center;
+    }
+  
+    #page7 .p7-right h1 {
+      font-size: 8vw; /* Adjust font size for smaller screens */
+      text-align: center;
+    }
+  
+    .page7-b {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+  }
+  
+/* Media Queries */
+
+  
+  /* For screens between 768px and 1024px (tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet styles */
+    #cursor {
+      height: 35px;
+      width: 35px;
+    }
+  
+    #cursor h5 {
+      font-size: 1vw;
+    }
+  
+    nav svg {
+      height: 5vw;
+    }
+  
+    .nav-part2 h4 {
+      font-size: 2vw;
+    }
+  
+    #page1 h1 {
+      font-size: 14vw;
+      line-height: 1.2;
+    }
+  
+    #page2 p {
+      font-size: 8vw;
+      line-height: 1.3;
+    }
+  
+    #container {
+      padding: 5vw;
+    }
+  
+    #page3 h1 {
+      font-size: 8vw;
+    }
+  
+    .card {
+        height: 55vh;
+      width: 40vw;
+    }
+  
+    .card h2 {
+      font-size: 3vw;
+    }
+  
+    .card p {
+      font-size: 1.5vw;
+    }
+  
+    #page4 > h1 {
+      font-size: 12vw;
+    }
+  
+    .element h2 {
+      font-size: 4vw;
+    }
+  
+    #page5 h1 {
+      font-size: 12vw;
+    }
+  
+    #page6 h1 {
+      font-size: 12vw;
+    }
+  
+    #page6 .p6-card .p6-left h2 {
+      font-size: 5vw;
+    }
+  
+    #page6 .p6-card .p6-right p {
+      font-size: 2vw;
+    }
+  
+    .cont2 h1 {
+      font-size: 6vw;
+    }
+  
+    .cont2 h1 span i {
+      font-size: 10vw;
+    }
+  
+    #page7 .p7-right h1 {
+      font-size: 5vw;
+    }
+  }
+  
+  /* For screens larger than 1024px (desktops) */
+  @media (min-width: 1025px) {
+    /* Desktop styles */
+    #cursor {
+      height: 30px;
+      width: 30px;
+    }
+  
+    #cursor h5 {
+      font-size: 0.8vw;
+    }
+  
+    nav svg {
+      height: 4vw;
+    }
+  
+    .nav-part2 h4 {
+      font-size: 1.5vw;
+    }
+  
+    #page1 h1 {
+      font-size: 16vw;
+    }
+  
+    #page2 p {
+      font-size: 4.5vw;
+      line-height: 1.2;
+    }
+  
+    #container {
+      padding: 8vw;
+    }
+  
+    #page3 h1 {
+      font-size: 7vw;
+    }
+  
+    .card {
+      width: 35vw;
+    }
+  
+    .card h2 {
+      font-size: 2.5vw;
+    }
+  
+    .card p {
+      font-size: 1.2vw;
+    }
+  
+    #page4 > h1 {
+      font-size: 13vw;
+    }
+  
+    .element h2 {
+      font-size: 3.5vw;
+    }
+  
+    #page5 h1 {
+      font-size: 13vw;
+    }
+  
+    #page6 h1 {
+      font-size: 13vw;
+    }
+  
+    #page6 .p6-card .p6-left h2 {
+      font-size: 4.5vw;
+    }
+  
+    #page6 .p6-card .p6-right p {
+      font-size: 1.5vw;
+    }
+  
+    .cont2 h1 {
+      font-size: 5.5vw;
+    }
+  
+    .cont2 h1 span i {
+      font-size: 8vw;
+    }
+  
+    #page7 .p7-right h1 {
+      font-size: 4.5vw;
+    }
+  }
