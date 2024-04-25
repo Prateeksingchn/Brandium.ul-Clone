@@ -6,7 +6,7 @@ This project is a clone of the official Brandium website, created using HTML, CS
 
 ## Demo
 
-Insert gif or link to demo
+https://prateeksingchn.github.io/Brandium.ul-Clone/
 
 
 ## Features
